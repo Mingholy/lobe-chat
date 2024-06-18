@@ -7,6 +7,7 @@ const Qwen: ModelProviderCard = {
       description: '通义千问超大规模语言模型，支持中文、英文等不同语言输入',
       displayName: 'Qwen Turbo',
       enabled: true,
+      functionCall: true,
       id: 'qwen-turbo',
       tokens: 8000,
     },
@@ -14,18 +15,22 @@ const Qwen: ModelProviderCard = {
       description: '通义千问超大规模语言模型增强版，支持中文、英文等不同语言输入',
       displayName: 'Qwen Plus',
       enabled: true,
+      functionCall: true,
       id: 'qwen-plus',
       tokens: 32_000,
     },
     {
-      description: '通义千问千亿级别超大规模语言模型，支持中文、英文等不同语言输入，当前通义千问2.5产品版本背后的API模型',
+      description:
+        '通义千问千亿级别超大规模语言模型，支持中文、英文等不同语言输入，当前通义千问2.5产品版本背后的API模型',
       displayName: 'Qwen Max',
       enabled: true,
+      functionCall: true,
       id: 'qwen-max',
       tokens: 8000,
     },
     {
-      description: '通义千问千亿级别超大规模语言模型，支持中文、英文等不同语言输入，扩展了上下文窗口',
+      description:
+        '通义千问千亿级别超大规模语言模型，支持中文、英文等不同语言输入，扩展了上下文窗口',
       displayName: 'Qwen Max LongContext',
       id: 'qwen-max-longcontext',
       tokens: 30_000,
@@ -47,6 +52,15 @@ const Qwen: ModelProviderCard = {
       displayName: 'Qwen2 72B',
       id: 'qwen2-72b-instruct',
       tokens: 131_072,
+    },
+    {
+      description:
+        '通义千问千亿级别超大规模语言模型，支持中文、英文等不同语言输入，当前通义千问2.5产品版本背后的API模型。',
+      displayName: 'Qwen VL',
+      enabled: true,
+      id: 'qwen-vl-plus',
+      tokens: 8192,
+      vision: true,
     },
   ],
   checkModel: 'qwen-turbo',
